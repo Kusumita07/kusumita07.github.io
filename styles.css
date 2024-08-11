@@ -1,23 +1,45 @@
+/* Basic styles */
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #000000; /* Black background */
-    color: #ffffff; /* White text for contrast */
+    background-color: #000; /* Black background */
+    color: #fff;
     line-height: 1.6;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background: #007acc;
+    background: #ff4b5c; /* Red header */
     color: #fff;
     padding: 15px 0;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
+nav ul {
+    list-style-type: none;
+    padding: 0;
     margin: 0;
-    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #007acc; /* Blue navigation links */
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #ff4b5c; /* Red on hover */
 }
 
 main {
@@ -26,15 +48,12 @@ main {
 
 section {
     margin-bottom: 40px;
-    background-color: #333333; /* Dark gray for sections */
-    border-radius: 8px;
-    padding: 20px;
 }
 
 h2 {
     font-size: 1.8rem;
-    color: #007acc;
-    border-bottom: 2px solid #007acc;
+    color: #ff4b5c; /* Red section titles */
+    border-bottom: 2px solid #ff4b5c;
     padding-bottom: 10px;
     margin-bottom: 20px;
 }
@@ -45,19 +64,19 @@ ul {
 }
 
 li {
-    background: #1e1e1e; /* Darker gray for list items */
+    background: #1c1c1c; /* Dark background for list items */
     margin: 5px 0;
     padding: 10px;
-    border-left: 4px solid #007acc;
+    border-left: 4px solid #007acc; /* Blue border on list items */
 }
 
 a {
-    color: #007acc;
+    color: #ff69b4; /* Pink links */
     text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline;
+    color: #007acc; /* Blue on hover */
 }
 
 .about-image {
@@ -65,10 +84,24 @@ a:hover {
     height: auto;
     border-radius: 10px;
     margin-top: 15px;
+    border: 5px solid #ff69b4; /* Pink border around the image */
+}
+
+.download-button {
+    background-color: #ff4b5c; /* Red download button */
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.download-button:hover {
+    background-color: #007acc; /* Blue on hover */
 }
 
 footer {
-    background: #007acc;
+    background: #ff69b4; /* Pink footer */
     color: #fff;
     text-align: center;
     padding: 15px 0;
@@ -83,24 +116,10 @@ footer a {
 }
 
 footer a:hover {
-    color: #ffdd57;
+    color: #007acc; /* Blue on hover */
 }
 
-/* Download Button Styles */
-.download-button {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 1rem;
-    color: #ffffff;
-    background-color: #007acc;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-    text-align: center;
-    margin-top: 20px;
-}
-
-.download-button:hover {
-    background-color: #005f8a;
-    cursor: pointer;
+/* Pop-up effect for About Me section */
+.hidden {
+    display: none;
 }
