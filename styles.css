@@ -80,11 +80,12 @@ a:hover {
 }
 
 .about-image {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
+    max-width: 150px; /* Adjust this value to make the image smaller */
+    height: 150px; /* Ensure the height matches the width for a perfect circle */
+    border-radius: 50%; /* This makes the image circular */
     margin-top: 15px;
     border: 5px solid #ff69b4; /* Pink border around the image */
+    object-fit: cover; /* Ensures the image fits within the circle */
 }
 
 .download-button {
