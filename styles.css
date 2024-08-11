@@ -1,7 +1,7 @@
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White text for contrast */
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -26,6 +26,9 @@ main {
 
 section {
     margin-bottom: 40px;
+    background-color: #333333; /* Dark gray for sections */
+    border-radius: 8px;
+    padding: 20px;
 }
 
 h2 {
@@ -42,7 +45,7 @@ ul {
 }
 
 li {
-    background: #e0f7fa;
+    background: #1e1e1e; /* Darker gray for list items */
     margin: 5px 0;
     padding: 10px;
     border-left: 4px solid #007acc;
@@ -83,18 +86,21 @@ footer a:hover {
     color: #ffdd57;
 }
 
+/* Download Button Styles */
 .download-button {
     display: inline-block;
     padding: 10px 20px;
     font-size: 1rem;
-    color: #fff;
+    color: #ffffff;
     background-color: #007acc;
     border: none;
     border-radius: 5px;
     text-decoration: none;
     text-align: center;
+    margin-top: 20px;
 }
 
 .download-button:hover {
     background-color: #005f8a;
     cursor: pointer;
+}
