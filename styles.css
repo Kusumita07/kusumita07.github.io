@@ -82,3 +82,19 @@ footer a {
 footer a:hover {
     color: #ffdd57;
 }
+
+.download-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007acc;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.download-button:hover {
+    background-color: #005f8a;
+    cursor: pointer;
