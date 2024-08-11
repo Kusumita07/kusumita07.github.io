@@ -1,9 +1,6 @@
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
+// Pop up the About Me section after a few seconds
+window.onload = function() {
+    setTimeout(function() {
+        document.getElementById('about').classList.remove('hidden');
+    }, 3000); // 3-second delay
+};
