@@ -1,11 +1,20 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Delay and show sections with fade-in effect
+    // Show sections with fade-in and slide-up effect
     const sections = document.querySelectorAll(".content section");
-    sections.forEach((section, index) => {
-        setTimeout(() => {
-            section.classList.remove("hidden");
-            section.style.opacity = "1";
-        }, 1000 * (index + 1));
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+                entry.target.classList.remove("hidden");
+            }
+        });
+    }, {
+        threshold: 0.1
+    });
+
+    sections.forEach(section => {
+        section.classList.add("hidden");
+        observer.observe(section);
     });
 
     // Smooth scroll to section
@@ -20,6 +29,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 top: targetSection.offsetTop,
                 behavior: "smooth"
             });
+
+            // Highlight active link
+            sidebarLinks.forEach(link => link.classList.remove("active"));
+            this.classList.add("active");
         });
     });
 });
