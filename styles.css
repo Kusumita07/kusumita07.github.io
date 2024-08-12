@@ -1,3 +1,4 @@
+/* General Styling */
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #f5f5dc; /* Cream background */
@@ -51,8 +52,10 @@ body {
     flex: 1;
     padding: 40px;
     background: #f5f5dc; /* Matching cream background */
+    position: relative;
 }
 
+/* Heading */
 h2 {
     color: #007acc;
     border-bottom: 2px solid #007acc;
@@ -60,6 +63,7 @@ h2 {
     margin-bottom: 20px;
 }
 
+/* Profile Image */
 .profile-image {
     width: 150px;
     height: 150px;
@@ -69,11 +73,13 @@ h2 {
     margin: 0 auto 20px;
 }
 
+/* About Content */
 .about-content p {
     font-size: 1rem;
     line-height: 1.6;
 }
 
+/* Footer Styling */
 footer {
     background: #343a40;
     color: #fff;
@@ -85,4 +91,21 @@ footer {
 footer a {
     color: #ff7f50;
     text-decoration: none;
+}
+
+/* Section Animations */
+section.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Sidebar Links Active State */
+.sidebar ul li a.active {
+    color: #007acc; /* Active link color */
 }
