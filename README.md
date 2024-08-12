@@ -1,5 +1,6 @@
 # Data Analytics
 
+![formal photo](https://github.com/user-attachments/assets/984c0c70-dc8e-4675-88a2-63d63d46ef1b)
 
 ### Education
 -MSc. Economics  Symbiosis School of Economics 
