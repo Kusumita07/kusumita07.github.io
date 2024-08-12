@@ -1,15 +1,15 @@
 /* Basic styles */
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #000; /* Black background */
-    color: #fff;
+    background-color: #f5f5dc; /* Cream background */
+    color: #333;
     line-height: 1.6;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background: #ff4b5c; /* Red header */
+    background: #ff69b4; /* Pink header */
     color: #fff;
     padding: 15px 0;
     text-align: center;
@@ -29,17 +29,17 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #333;
     text-decoration: none;
     font-weight: bold;
-    background-color: #007acc; /* Blue navigation links */
+    background-color: #add8e6; /* Light blue navigation links */
     padding: 10px 15px;
     border-radius: 5px;
     transition: background-color 0.3s;
 }
 
 nav ul li a:hover {
-    background-color: #ff4b5c; /* Red on hover */
+    background-color: #ff69b4; /* Pink on hover */
 }
 
 main {
@@ -52,8 +52,8 @@ section {
 
 h2 {
     font-size: 1.8rem;
-    color: #ff4b5c; /* Red section titles */
-    border-bottom: 2px solid #ff4b5c;
+    color: #ff69b4; /* Pink section titles */
+    border-bottom: 2px solid #ff69b4;
     padding-bottom: 10px;
     margin-bottom: 20px;
 }
@@ -64,10 +64,10 @@ ul {
 }
 
 li {
-    background: #1c1c1c; /* Dark background for list items */
+    background: #fff; /* White background for list items */
     margin: 5px 0;
     padding: 10px;
-    border-left: 4px solid #007acc; /* Blue border on list items */
+    border-left: 4px solid #add8e6; /* Light blue border on list items */
 }
 
 a {
@@ -76,21 +76,21 @@ a {
 }
 
 a:hover {
-    color: #007acc; /* Blue on hover */
+    color: #add8e6; /* Light blue on hover */
 }
 
 .about-image {
-    max-width: 150px; /* Adjust this value to make the image smaller *//
-    height: 150px; /* Ensure the height matches the width for a perfect circle */
-    border-radius: 50%; /* This makes the image circular */
+    max-width: 150px; /* Smaller circular profile picture */
+    height: 150px;
+    border-radius: 50%;
     margin-top: 15px;
-    border: 5px solid #ff69b4; /* Pink border around the image */
-    object-fit: cover; /* Ensures the image fits within the circle */
+    border: 5px solid #add8e6; /* Light blue border around the image */
+    object-fit: cover;
 }
 
 .download-button {
-    background-color: #ff4b5c; /* Red download button */
-    color: #fff;
+    background-color: #add8e6; /* Light blue download button */
+    color: #333;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
@@ -98,12 +98,12 @@ a:hover {
 }
 
 .download-button:hover {
-    background-color: #007acc; /* Blue on hover */
+    background-color: #ff69b4; /* Pink on hover */
 }
 
 footer {
-    background: #ff69b4; /* Pink footer */
-    color: #fff;
+    background: #add8e6; /* Light blue footer */
+    color: #333;
     text-align: center;
     padding: 15px 0;
     position: fixed;
@@ -112,12 +112,12 @@ footer {
 }
 
 footer a {
-    color: #fff;
+    color: #333;
     text-decoration: underline;
 }
 
 footer a:hover {
-    color: #007acc; /* Blue on hover */
+    color: #ff69b4; /* Pink on hover */
 }
 
 /* Pop-up effect for About Me section */
