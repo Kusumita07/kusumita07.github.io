@@ -35,6 +35,10 @@ body {
 
 .sidebar ul li {
     margin-bottom: 15px;
+    opacity: 0;
+    transform: translateX(-20px);
+    animation: slideIn 0.5s forwards;
+    animation-delay: calc(0.1s * var(--i));
 }
 
 .sidebar ul li a {
@@ -53,6 +57,10 @@ body {
     padding: 40px;
     background: #f5f5dc; /* Matching cream background */
     position: relative;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s forwards;
+    animation-delay: 0.8s;
 }
 
 /* Heading */
@@ -102,10 +110,4 @@ section.hidden {
 
 section.visible {
     opacity: 1;
-    transform: translateY(0);
-}
-
-/* Sidebar Links Active State */
-.sidebar ul li a.active {
-    color: #007acc; /* Active link color */
-}
+    transform
